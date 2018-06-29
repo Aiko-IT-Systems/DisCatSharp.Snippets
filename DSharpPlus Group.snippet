@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>DSharpPlup Group</Title>
+      <Author>FRNathan13</Author>
+      <Description>Create empty DSharpPlus Group</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>dsp_group</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext.Attributes</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>GroupName</ID>
+          <ToolTip>Group Name</ToolTip>
+          <Default>MyGroup</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[public partial class $GroupName$ : BaseCommandModule 
+{
+    $selected$$end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

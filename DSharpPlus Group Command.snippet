@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>DSharpPlus Group Command</Title>
+      <Author>FRNathan13</Author>
+      <Description>Create empty command group.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>dsp_group_command</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext.Attributes</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>GroupName</ID>
+          <ToolTip>Group Name</ToolTip>
+          <Default>MyGroup</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>GroupCommandName</ID>
+          <ToolTip>Group Command Name</ToolTip>
+          <Default>mygroup</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[Group("$GroupCommandName$")]
+public partial class $GroupName$ : BaseCommandModule 
+{
+    $selected$$end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
