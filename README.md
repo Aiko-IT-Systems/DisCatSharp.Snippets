@@ -31,3 +31,7 @@ Please follow this website to learn how to create a discord bot using DSharpPlus
 ## Credits<br/>
 Thanks for <a href="https://marketplace.visualstudio.com/publishers/vs-publisher-2795">Matthew Manela</a> for provide <a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-2795.SnippetDesigner">Snippet Designer</a>.<br/>
 Thanks for <a href="https://github.com/DSharpPlus">DSharpPlus Team</a> to provide extremely incredible and effective <a href="https://www.nuget.org/packages/DSharpPlus/">C# Discord API</a>.<br/>
+
+
+## Join In StormDevelopmentSoftware Guild
+<a href="http://discord.gg/X693TVb"><img src="https://discordapp.com/api/guilds/356466298835959810/embed.png?style=banner2"></a>
