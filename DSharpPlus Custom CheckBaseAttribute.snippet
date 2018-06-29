@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>DSharpPlus Empty Custom Precondition Attribute</Title>
+      <Author>FRNathan13</Author>
+      <Description>Create empty custom precondition attribute.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>dsp_checkbase</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus.CommandsNext.Attributes</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>AttributeName</ID>
+          <ToolTip>AttributeName</ToolTip>
+          <Default>AttributeName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+public class $AttributeName$Attribute : CheckBaseAttribute
+{
+    public override async Task<bool> ExecuteCheckAsync(CommandContext ctx, bool help)
+    {			
+        $selected$$end$
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
