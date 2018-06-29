@@ -23,3 +23,11 @@ Simple shortcuts (snippets) to develop a bot using the <a href="https://github.c
 
 
 > Soon more snippets. :)
+
+## How to create a discord bot?
+Please follow this website to learn how to create a discord bot using DSharpPlus API: <b><a href="https://dsharpplus.emzi0767.com/articles/intro.html">Getting started with DSharpPlus</a></b>
+
+
+## Credits<br/>
+Thanks for <a href="https://marketplace.visualstudio.com/publishers/vs-publisher-2795">Matthew Manela</a> for provide <a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-2795.SnippetDesigner">Snippet Designer</a>.<br/>
+Thanks for <a href="https://github.com/DSharpPlus">DSharpPlus Team</a> to provide extremely incredible and effective <a href="https://www.nuget.org/packages/DSharpPlus/">C# Discord API</a>.<br/>
