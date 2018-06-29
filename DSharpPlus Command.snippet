@@ -5,17 +5,26 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>DSharpPlus Executable Group Command</Title>
+      <Title>DSharpPlus Command</Title>
       <Author>FRNathan13</Author>
-      <Description>Create empty command executable group.</Description>
+      <Description>Create single command.</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>dsp_executable_group_command</Shortcut>
+      <Shortcut>dsp_command</Shortcut>
     </Header>
     <Snippet>
       <Imports>
         <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
           <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus</Namespace>
+        </Import>
+        <Import>
+          <Namespace>DSharpPlus.Entities</Namespace>
         </Import>
         <Import>
           <Namespace>DSharpPlus.CommandsNext</Namespace>
@@ -26,28 +35,24 @@
       </Imports>
       <Declarations>
         <Literal Editable="true">
-          <ID>GroupName</ID>
-          <ToolTip>Group Name</ToolTip>
-          <Default>MyGroup</Default>
+          <ID>ComamndMethodName</ID>
+          <ToolTip>Comamnd Method Name</ToolTip>
+          <Default>MyCommand</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>GroupCommandName</ID>
-          <ToolTip>Group Command Name</ToolTip>
-          <Default>mygroup</Default>
+          <ID>CommandName</ID>
+          <ToolTip>Command Name</ToolTip>
+          <Default>mycommand</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[[Group("$GroupCommandName$")]
-public partial class $GroupName$ : BaseCommandModule 
+      <Code Language="csharp" Delimiter="$" Kind="method decl"><![CDATA[[Command("$CommandName$")]
+public async Task $ComamndMethodName$Async(CommandContext ctx)
 {
-    [GroupCommand]
-    public async Task ExecuteGroupAsync(CommandContext ctx)
-    {
-         $selected$$end$
-    }
+    $selected$$end$
 }]]></Code>
     </Snippet>
   </CodeSnippet>
