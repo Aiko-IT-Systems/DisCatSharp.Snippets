@@ -5,20 +5,20 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>DSharpPlus Group Command</Title>
+      <Title>DisCatSharp Group</Title>
       <Author>FRNathan13</Author>
-      <Description>Create empty command group.</Description>
+      <Description>Create empty DisCatSharp Group</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>dsp_group_command</Shortcut>
+      <Shortcut>dcs_group</Shortcut>
     </Header>
     <Snippet>
       <Imports>
         <Import>
-          <Namespace>DSharpPlus.CommandsNext</Namespace>
+          <Namespace>DisCatSharp.CommandsNext</Namespace>
         </Import>
         <Import>
-          <Namespace>DSharpPlus.CommandsNext.Attributes</Namespace>
+          <Namespace>DisCatSharp.CommandsNext.Attributes</Namespace>
         </Import>
       </Imports>
       <Declarations>
@@ -29,16 +29,8 @@
           <Function>
           </Function>
         </Literal>
-        <Literal Editable="true">
-          <ID>GroupCommandName</ID>
-          <ToolTip>Group Command Name</ToolTip>
-          <Default>mygroup</Default>
-          <Function>
-          </Function>
-        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[[Group("$GroupCommandName$")]
-public partial class $GroupName$ : BaseCommandModule 
+      <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[public partial class $GroupName$ : BaseCommandModule 
 {
     $selected$$end$
 }]]></Code>

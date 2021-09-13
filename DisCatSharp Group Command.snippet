@@ -5,23 +5,20 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>DSharpPlus Executable Group Command</Title>
+      <Title>DisCatSharp Group Command</Title>
       <Author>FRNathan13</Author>
-      <Description>Create empty command executable group.</Description>
+      <Description>Create empty command group.</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>dsp_executable_group_command</Shortcut>
+      <Shortcut>dcs_group_command</Shortcut>
     </Header>
     <Snippet>
       <Imports>
         <Import>
-          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>DisCatSharp.CommandsNext</Namespace>
         </Import>
         <Import>
-          <Namespace>DSharpPlus.CommandsNext</Namespace>
-        </Import>
-        <Import>
-          <Namespace>DSharpPlus.CommandsNext.Attributes</Namespace>
+          <Namespace>DisCatSharp.CommandsNext.Attributes</Namespace>
         </Import>
       </Imports>
       <Declarations>
@@ -43,11 +40,7 @@
       <Code Language="csharp" Delimiter="$" Kind="type decl"><![CDATA[[Group("$GroupCommandName$")]
 public partial class $GroupName$ : BaseCommandModule 
 {
-    [GroupCommand]
-    public async Task ExecuteGroupAsync(CommandContext ctx)
-    {
-         $selected$$end$
-    }
+    $selected$$end$
 }]]></Code>
     </Snippet>
   </CodeSnippet>
